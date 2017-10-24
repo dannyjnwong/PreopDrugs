@@ -11,7 +11,7 @@ library(shiny)
 library(dplyr)
 library(xtable)
 
-drugs_server <- read.csv("Royal_Cornwall_drugs.csv", stringsAsFactors = FALSE)
+drugs_server <- read.csv("drug_instructions.csv", stringsAsFactors = FALSE)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {

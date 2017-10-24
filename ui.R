@@ -10,13 +10,13 @@
 library(shiny)
 library(dplyr)
 
-drugs_ui <- read.csv("Royal_Cornwall_drugs.csv", stringsAsFactors = FALSE) 
+drugs_ui <- read.csv("drug_instructions.csv", stringsAsFactors = FALSE) 
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Preop Medication Advice v0.01"),
+  titlePanel("Preop Medication Advice v0.1"),
   p("Disclaimer: This advice comes from the Royal Cornwall Hospital, used without permission. Seek further advice from your doctor."),
   a(href="https://doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Clinical/Anaesthetics/PreOperativeAssessmentGuidelines.pdf", "Click here for the original guidelines upon which this advice is based."),
   p("MIT License; Copyright (c) 2017 Danny Jon Nian Wong."), 
